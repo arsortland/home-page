@@ -13,4 +13,4 @@ const domEffects = (() => {
 
 //TODO:
 //Add static button to top of page button!
-//
+//hover over pictures with a short description about them.

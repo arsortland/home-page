@@ -38,6 +38,7 @@ header{
 
 .top{
     background-image: url(./milad-fakurian-GJKx5lhwU3M-unsplash.jpeg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
     background-size: cover;
@@ -161,6 +162,9 @@ button:active{
 .footer {
     margin-bottom: -10;
     text-align: center;
+}
+.footer a{
+    color: black;
 }
 
 #contact {

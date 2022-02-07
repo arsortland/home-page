@@ -1,16 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-body{
-    height: 80vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    background-color: rgb(114, 124, 126);
 }
 
-div{
-    font-size: 100px;
+body{
+    font-size: 1.5rem;
+    font-family: 'Lato' , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2rem;
+}
+
+img{
+    height: 32px;
+    margin-inline: 15px;
+}
+
+a{
+    text-decoration-line: none;
+    color: rgb(198, 199, 201);
+}
+
+header{
+    background-image: url(./img/geike-verniers-9MBpsd5X5mw-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    height: 15rem;
+    text-shadow: 2px 2px 10px rgba(245, 245, 245,1);
+}
+
+.top{
+    background-image: url(./milad-fakurian-GJKx5lhwU3M-unsplash.jpeg);
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bottom{
+    background-image: url(./img/joanna-kosinska-1_CMoFsPfso-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    height: 100vh;
+}
+
+.projectlink{
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+section, #projects{
+    color: rgb(0, 19, 36);
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+section{
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p{
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+#projects{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn a{
+    color: #ffffff;
+    cursor:default;
+}
+
+h4{
+    font-size: 40px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 4rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    padding: 0;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 15vh;
+}
+
+
+#tictactoe{
+    background-image: url(./img/tictactoe.png);
+    background-size: 10rem 10rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+#etch{
+    background-image: url(./img/etchasketch.png);
+    background-size: 10rem 10rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#rps{
+    background-image: url(./img/rps.png);
+    background-size: 10rem 10rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+#calculator{
+    background-image: url(./img/calc.png);
+    background-size: 10rem 10rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+button{
+    width: 14vw;
+    height: 2vh;
+    margin: 0.5rem;
+    box-shadow: 20px 20px 20px black;
+    background-color: #373e98;
+    border: none;
+    cursor: default;
+}
+
+button:hover{
+    border: 1px solid white;
+}
+
+button:active{
+    transform:translateY(4px);
+}
+
+.footer {
+    margin-bottom: -10;
+    text-align: center;
+}
+
+#contact {
+    background-image: url(./img/leone-venter-VieM9BdZKFo-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+
+
+@media only screen and (max-width: 400px) {
+
+    body{
+        font-size: 1rem;
+    }
+    .top, .bottom{
+        height: auto;
+    }
+    a{
+        color: transparent;
+    }
+    .projectlink{
+        color: black;
+    }
+
+    .project{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    button{
+        width: 20vw;
+        height: 5vw;
+    }
+
+    #calculator, #etch, #tictactoe, #rps{
+        background-size: 5rem 5rem;
+    }
+
+
 }

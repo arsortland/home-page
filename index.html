@@ -4,11 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>André Sortland</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>André Sortland</title>
 </head>
 <body>
-    <div>Coming soon...</div>
+    <div class="top">
+        <header>
+            <a  class="projectlink" href="#projects">See my projects here.</a> <a class="projectlink" href="#contact">Contact me</a> <div class="links"><a href="https://github.com/arsortland" target="_blank">GitHub<img src="./img/GitHub-Mark-Light-32px.png"><a href="https://www.linkedin.com/in/arsortland/" target="_blank">LinkedIn<img src="./img/LI-In-Bug.png" alt=""></a></div>
+        </header>
+        <section>
+            Hello! <br><br> My name is André Sortland. I am a 32 year old kindergarden teacher that are making me way into frontend and/or fullstack web development. <br><br>
+            I love to learn, and after discovering the world of programming i have never looked back. I started this journey december 2021, but have also been programming in Python and Java for around 6 months each before that.
+            <br><br>
+            I am currently learning Javascript, HMTL5 and CSS3 on my own. At the same time i am attending full time studies that have a broader approach to modern IT-technologies.
+            My goal is to have a complete understanding of how internet and the technologies that brings us together works in order for myself to become the best developer as i can be.
+            <br><br>
+            You can follow my progress here, and i will update the site frequently with new projects an designs as i dive deeper down in the stack!
+            <br><br>
+            Note: &nbsp;&nbsp;&nbsp;The current projects works best on web and not mobile units. The following projects will be more mobile-friendly.
+        </section>
+        <br><br>
+        <p>PS check out my GitHub and LinkedIn for even more information about me!</p>
+    </div>
+    <div class="bottom">
+        <!--Make Hover function in JS that-->
+        <div id="projects">
+            <h4>Featured projects:</h4>
+            <div class="project" id="tictactoe">
+                <div class="text">Tic Tac Toe</div>
+                <button class="btn" type="button"><a href="https://github.com/arsortland/RPSgame" target="_blank">Source Code</a></button>
+                <button class="btn" type="button"><a href="https://arsortland.github.io/RPSgame/" target="_blank">Live Preview</a></button>
+            </div>
+            <div class="project" id="etch">
+                <div class="text">Etch-a-sketch</div>
+                <button class="btn" type="button"><a href="https://github.com/arsortland/etch-a-sketch" target="_blank">Source Code</a></button>
+                <button class="btn" type="button"><a href="https://arsortland.github.io/etch-a-sketch/" target="_blank">Live Preview</a></button>
+            </div>
+            <div class="project" id="rps">
+                <div class="text">Rock,paper,scissor</div>
+                <button class="btn" type="button"><a href="https://github.com/arsortland/RPSgame" target="_blank">Source Code</a></button>
+                <button class="btn" type="button"><a href="https://arsortland.github.io/RPSgame/" target="_blank">Live Preview</a></button>
+            </div>
+            <div class="project" id="calculator">
+                <div class="text">Calculator</div>
+                <button class="btn" type="button"><a href="https://github.com/arsortland/Calculator" target="_blank">Source Code</a></button>
+                <button class="btn" type="button"><a href="https://arsortland.github.io/Calculator/" target="_blank">Live Preview</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        Contact me through my email:
+        <fieldset>
+            <legend>Email</legend>
+            arsortland@gmail.com
+            <form action="mailto: arsortland@gmail.com" method="get">
+                <div>
+                    <button type="submit">Send mail</button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+    <footer class="footer">
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+        <a href="https://github.com/arsortland/Library">arsortland</a>
+        </p>
+    </footer>
 </body>
 </html>

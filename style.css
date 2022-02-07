@@ -190,6 +190,9 @@ button:active{
     .top, .bottom{
         height: auto;
     }
+    .top{
+        background-image: none;
+    }
     a{
         color: transparent;
     }

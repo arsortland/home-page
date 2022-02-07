@@ -15,3 +15,4 @@ const domEffects = (() => {
 //Add static button to top of page button!
 //hover over pictures with a short description about them.
 //better looking form. make a postcard?
+//round picture of me somwhere mebe?

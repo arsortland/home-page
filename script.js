@@ -16,3 +16,4 @@ const domEffects = (() => {
 //hover over pictures with a short description about them.
 //better looking form. make a postcard?
 //round picture of me somwhere mebe?
+//Make 16:10 format look better.

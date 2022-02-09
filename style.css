@@ -39,6 +39,8 @@ header{
 }
 
 .top{
+    display: flex;
+    flex-direction: column;
     background-image: url(./milad-fakurian-GJKx5lhwU3M-unsplash.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -194,7 +196,7 @@ button:active{
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     body{
         font-size: 1rem;

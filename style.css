@@ -39,8 +39,6 @@ header{
 }
 
 .top{
-    display: flex;
-    flex-direction: column;
     background-image: url(./milad-fakurian-GJKx5lhwU3M-unsplash.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -196,9 +194,13 @@ button:active{
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 
     body{
+        font-size: 1rem;
+    }
+
+    section{
         font-size: 1rem;
     }
     .top, .bottom{
@@ -217,7 +219,8 @@ button:active{
     .project{
         margin-left: 0;
         margin-right: 0;
-    }
+        margin-top: 0;
+        }
 
     button{
         width: 20vw;
@@ -230,6 +233,10 @@ button:active{
 
     form button{
         display: none;
+    }
+
+    #contact{
+        background-image: none;
     }
 
 

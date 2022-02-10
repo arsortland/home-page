@@ -1,20 +1,27 @@
-const domEffects = (() => {
-  const projects = document.querySelectorAll(".project");
+const scrollBackToTop = (() => {
+  const show = 150;
+  const backtop = document.querySelector("#totop");
 
-  projects.forEach((e) =>
-    e.addEventListener("mouseenter", () => {
-      e.classList.add("active");
-    })
-  );
-  projects.forEach((e) =>
-    e.addEventListener("mouseleave", () => e.classList.remove("active"))
-  );
+  const scrollcontainer = () => {
+    return document.documentElement || document.body;
+  };
+
+  document.addEventListener("scroll", () => {
+    if (scrollcontainer().scrollTop > show) {
+      backtop.classList.remove("hidden");
+    } else {
+      backtop.classList.add("hidden");
+    }
+  });
+  const goTop = () => {
+    document.body.scrollIntoView();
+  };
+
+  backtop.addEventListener("click", goTop);
 })();
 
 //TODO:
-//Add static button to top of page button!
 //hover over pictures with a short description about them.
 //better looking form. make a postcard?
-//round picture of me somwhere mebe?
 //Make 16:10 format look better.
 //typos! formatting! phrasing!

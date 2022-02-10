@@ -21,7 +21,4 @@ const scrollBackToTop = (() => {
 })();
 
 //TODO:
-//hover over pictures with a short description about them.
 //better looking form. make a postcard?
-//Make 16:10 format look better.
-//typos! formatting! phrasing!

@@ -20,14 +20,15 @@ body{
     position: fixed;
     right: 2rem;
     bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     width: fit-content;
     height: fit-content;
-    border: 1px solid white;
-    box-shadow: 1px 1px 1px white;
-    background-color: black;
-    color: white;
+    box-shadow: none;
+    background-color: #373e98;
+    color: rgb(255, 255, 255);
     transition: opacity 0.7s;
+    padding: 1rem;
+    border-radius: 25px;
 }
 
 #totop .tooltip{
@@ -130,6 +131,7 @@ section, #projects{
 }
 
 section{
+    position: absolute;
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-left: 2rem;
